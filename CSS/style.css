@@ -1,0 +1,94 @@
+.navi-bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #dabf22;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    float: left;
+}
+.navi-items{
+    float: left;
+}
+.navi-items a{  
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navi-items:hover a:hover{
+    color: #F9E03B;
+    background-color: #87c430d8;
+}
+
+/* contact für die navigationsbar */
+
+.contact{
+    margin-right: 850px;
+}
+
+/* dient dem hintergrund effects beim scrollen*/
+
+.hintergrundbild1{
+    background-image: url("hintergrund.png");
+    background-size: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* dient den hintergrund effects beim scrollen*/
+
+.hintergrundbild2{
+    background-image: url("hintergrund2.jpg");
+    background-size: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.headers{
+    margin-top: 75px;
+}
+.headers:hover{
+    color: green;
+}
+#drehende-banane{
+    animation: drehende-banane 1s;
+
+	animation-play-state: paused;
+	animation-delay: calc(var(--scroll) * -1s);
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+
+    position: fixed;
+    bottom: 8px;
+    right: 12px;
+    width: 20%;
+    height: 20%;
+}
+
+/* dient der animation der drehenden banane*/
+
+@keyframes drehende-banane{
+   to {
+       transform: rotate(360deg)
+    }
+}
+h1{
+    color: palegoldenrod;
+}
+p{
+    color: palegreen;
+}
+p:hover{
+    color: green;
+}
